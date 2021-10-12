@@ -1,0 +1,85 @@
+/* ******************************************
+************* heading ********************
+****************************************** */
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(5, 25, 79);
+}
+
+/* ******************************************
+************* question ********************
+****************************************** */
+
+#question {
+  text-align: center;
+  border-radius: 0.4em;
+  width: 70%;
+  padding: 30px;
+  border: 3px solid;
+  background: royalblue;
+  color: black;
+  font-size: 28px;
+  margin: 10px auto;
+}
+
+/* ******************************************
+************* answers ********************
+****************************************** */
+
+#answer {
+  width: 50%;
+  border-radius: 0.7em;
+
+  margin: 10px auto;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#answer ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#answer ul div {
+  text-align: center;
+  width: 40%;
+  height: 40px;
+  flex-wrap: wrap;
+  background-color: black;
+  border-radius: 1.1em;
+  padding: 1px;
+  color: green;
+  margin: 4px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+}
+
+/* ******************************************
+************* scoreboard ********************
+****************************************** */
+
+#scores {
+  display: flex;
+  width: 70%;
+  background-color: lightgray;
+  justify-content: center;
+  margin:10px auto;
+}
+
+#player1, #player2{
+    width:40%;
+    background-color:red;
+    margin:7px;
+    text-align:center;
+    border-radius: 1.1em;
+
+}
