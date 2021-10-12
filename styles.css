@@ -5,7 +5,7 @@
 h1 {
   font-size: 70px;
   text-align: center;
-  color: rgb(5, 25, 79);
+  color: rgb(187, 15, 187);
 }
 
 /* ******************************************
@@ -13,15 +13,19 @@ h1 {
 ****************************************** */
 
 #questions {
+  opacity: 0.9;
   text-align: center;
   border-radius: 0.4em;
   width: 70%;
   padding: 30px;
-  border: 3px solid;
+  border: 3px;
   background: royalblue;
   color: black;
   font-size: 28px;
   margin: 10px auto;
+  animation-name: black-to-white;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 /* ******************************************
@@ -31,10 +35,10 @@ h1 {
 #answer {
   width: 50%;
   border-radius: 0.7em;
-
+  opacity: 0.98;
   margin: 10px auto;
   color: white;
-  background-color: red;
+  background-color: purple;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +46,8 @@ h1 {
 }
 
 #answer ul {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 2);
+  opacity: 0.97;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -50,17 +56,64 @@ h1 {
 }
 
 #answer ul div {
+  opacity: 0.9;
+  font-size: 12.5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 2);
   text-align: center;
   width: 40%;
   height: 40px;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: grey;
   border-radius: 1.1em;
   padding: 1px;
-  color: green;
+  color: snow;
   margin: 4px;
-  padding-top: 10px;
+  padding-top: 22px;
+  cursor: pointer;
+  
+
   /* justify-content: space-between; */
+}
+
+@keyframes rainbow {
+  0% {
+    background: black;
+  }
+  10% {
+    background: crimson;
+  }
+  30% {
+    background: hotpink;
+  }
+
+  40% {
+    background: black;
+  }
+  50% {
+    background: palegreen;
+  }
+  60% {
+    background: black;
+  }
+  75% {
+    background: steelblue;
+  }
+
+  90% {
+    background: rgb(240, 106, 4);
+  }
+  100% {
+    background: blue;
+  }
+}
+
+#answer ul div:hover {
+  /* opacity: 1;
+  transform: scale(1.07); */
+  background-color: royalblue;
+  animation-name: rainbow;
+  animation-duration: 0.7s;
+  animation-iteration-count: 2s;
 }
 
 /* ******************************************
@@ -68,18 +121,78 @@ h1 {
 ****************************************** */
 
 #scores {
+  opacity: 0.8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+  border: 3px purple;
+  border-radius: 2em;
   display: flex;
   width: 70%;
   background-color: lightgray;
   justify-content: center;
-  margin:10px auto;
+  margin: 10px auto;
+
+  /* I LITERALLY TYPES THIS ON ACCIDENT AND IT PUSHES HARDER THAN 10PX. SO NOW I LIKE PC LOL */
+  margin-top: 5pc;
 }
 
-#player1, #player2{
-    width:40%;
-    background-color:red;
-    margin:7px;
-    text-align:center;
-    border-radius: 1.1em;
-
+@keyframes black-to-white {
+  0% {
+    background: rgb(123, 121, 121);
+  }
+  50% {
+    background: lightgray;
+    /* width: 100%; */
+  }
+  100% {
+    background: rgb(123, 121, 121);
+  }
 }
+@keyframes black-to-white2 {
+  0% {
+    background: red;
+  }
+  50% {
+    background: blue;
+    width: 99%;
+  }
+  100% {
+    background: green;
+  }
+}
+
+#player1,
+#player2 {
+  opacity: 0.8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+  width: 40%;
+  background-color: red;
+  margin: 7px;
+  text-align: center;
+  border-radius: 1.1em;
+}
+#player2 {
+  background-color: blue;
+}
+
+#turn {
+  opacity: 0.95;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 2);
+  border: 2px white;
+  width: 40%;
+  background-color: grey;
+  margin: auto;
+  text-align: center;
+  border-radius: 1.1em;
+  padding: 10px;
+  font-size: 25px;
+}
+
+body {
+  background-image: url("./AdobeStock_130349472-trivia.jpeg");
+  background-size:auto;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  
+}
+
