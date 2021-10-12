@@ -1,5 +1,5 @@
 # Project 1 Documentation
-## by Tony Daniels
+## By Tony Daniels
 
 
 ## Introduction
