@@ -41,9 +41,3 @@ console.log("goodbye")
 ```
 This part of ending was a bit hard until I was told to just reload the page by making something built into JS called location.reload(); This had to at the end of each function which lets a player know if they won the game. Once they click, the game resets.
 
-#### Example Table
-
-| Column1 | Column2 |
-|---------|---------|
-| thing1 | thing2 |
-| yadda1 | yadda2 |
