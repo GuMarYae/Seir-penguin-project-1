@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This project is created to ask two players a series of qiestions about things specifically dealing with movies; This is a teivia quiz aboout movies. The goal is to get 10 points before the other player in ordeer to win. I cose the points of 10 because there a seeries of 20 questions total.
+This project is created to ask two players a series of questions about things specifically dealing with movies; This is a trivia quiz about movies. The goal is to get 10 points before the other player in order to win. I chose the points of 10 because there's a series of 20 questions total.
 
 ## Technologies Used
 
