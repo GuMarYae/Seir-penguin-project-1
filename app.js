@@ -7,6 +7,8 @@ const state = {
   player2: 0,
   currentQuestion: {},
   turn: 1, //player one goes first
+
+  count:1
 };
 
 /* ******************************************
@@ -23,18 +25,21 @@ const $d = $("#d");
 const $player1Score = $("#player1 h4");
 const $player2Score = $("#player2 h4");
 
+
+
 /* ******************************************
  ************* Functions ***************
  *********************************************/
 
 const setBoard = (q) => {
+  
   // let winningPlayer;
   // alert("Welcome. First Player to 11 is the " +winningPlayer+ "!")
 
   const randomIndex = Math.floor(Math.random() * q.length); //I would put 20 since there 20 items in the array but The can shrink or stretch in reality so its best to have the computer adapt to the length of the array at all times.
   const randomQuestion = q[randomIndex];
   // question updates
-  $questions.text(randomQuestion.question);
+  $questions.text(state.count+". "+randomQuestion.question);
   $a.text(randomQuestion.a);
   $b.text(randomQuestion.b);
   $c.text(randomQuestion.c);
@@ -94,6 +99,7 @@ let switchTurn = () => {
   } else {
     state.turn = 1;
   }
+  state.count++
   $("#turn").text("Player " + state.turn + " turn");
 };
 //==========================
